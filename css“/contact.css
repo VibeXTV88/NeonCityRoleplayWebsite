@@ -56,7 +56,7 @@ nav .nav-links li a.active {
 }
 
 nav .btn-join {
-  background-color: #e6e600;
+  background-color: #181818;
   padding: 0.8rem 1.5rem;
   color: #000000;
   font-weight: bold;
@@ -126,7 +126,7 @@ nav .btn-join:hover {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #1277DD;
+  border-color: #ffffff;
   outline: none;
 }
 
@@ -164,7 +164,7 @@ nav .btn-join:hover {
 }
 
 .contact-info ul li a {
-  color: #1277DD;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -182,13 +182,13 @@ nav .btn-join:hover {
   background-color: #333;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  color: #1277DD;
+  color: #ffffff;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
 
 .social-links li a:hover {
-  background-color: #1277DD;
+  background-color: #ffffff;
   color: #000000;
 }
 
