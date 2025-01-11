@@ -1,0 +1,189 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1277DD;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Navbar */
+nav {
+  background-color: #1277DD;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 2rem;
+  color: #1277DD;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #1277DD;
+}
+
+nav .btn-join {
+  background-color: #000000;
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/1113066512962551808/1327398591022501989/Neon_Roleplay_big.jpg?ex=6782ebc5&is=67819a45&hm=b0bec2d2630f11402e36d39d58b5773495ddc948ecbb09db437a5fda504fffe3&'); /* Replace with a good background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn-hero {
+  background-color: #000000;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.hero .btn-hero:hover {
+  background-color: #000000;
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  background-color: #1277DD;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.feature {
+  text-align: center;
+  max-width: 250px;
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 0;
+  background-color: #222;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  font-style: italic;
+  color: #1277DD;
+}
