@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #1277DD;
   color: #fff;
 }
 
@@ -21,7 +21,7 @@ a {
 
 /* Navbar */
 nav {
-  background-color: #ffffff;
+  background-color: #1277DD;
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -62,7 +62,7 @@ nav .nav-links li a:hover, .nav-links li a.active {
 }
 
 nav .btn-join {
-  background-color: #000000;
+  background-color: #1277DD;
   padding: 0.8rem 1.5rem;
   color: #000;
   font-weight: bold;
@@ -77,7 +77,7 @@ nav .btn-join:hover {
 
 /* Whitelist Section */
 .whitelist {
-  background-color: #121221;
+  background-color: #121212;
   padding: 5rem 0;
   color: #fff;
   margin-top: 70px; /* Adjust for fixed navbar */
