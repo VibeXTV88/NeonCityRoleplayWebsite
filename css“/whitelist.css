@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1a1a1a;
@@ -21,8 +21,14 @@ a {
 
 /* Navbar */
 nav {
-  background-color: #181818;
+  background-color: #1277DD;
   padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
 }
 
 nav .container {
@@ -33,8 +39,9 @@ nav .container {
 
 nav .logo {
   font-size: 1.8rem;
-  color: #e6e600;
+  color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 nav .nav-links {
@@ -44,9 +51,10 @@ nav .nav-links {
 }
 
 nav .nav-links li a {
-  color: #ccc;
+  color: #fff;
   font-size: 1rem;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 nav .nav-links li a:hover, .nav-links li a.active {
@@ -70,15 +78,17 @@ nav .btn-join:hover {
 /* Whitelist Section */
 .whitelist {
   background-color: #121212;
-  padding: 4rem 0;
+  padding: 5rem 0;
   color: #fff;
+  margin-top: 70px; /* Adjust for fixed navbar */
 }
 
 .whitelist h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: #e6e600;
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 .whitelist p {
@@ -90,38 +100,47 @@ nav .btn-join:hover {
 
 .steps {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
 }
 
 .step {
   background-color: #222;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-basis: 45%;
+  transition: transform 0.3s ease;
 }
 
 .step h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #e6e600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .step p {
   font-size: 1rem;
   color: #ccc;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step:hover {
+  transform: translateY(-5px);
 }
 
 .btn-discord, .btn-apply {
   background-color: #7289da;
   color: #fff;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   border-radius: 5px;
-  display: inline-block;
   text-align: center;
+  display: inline-block;
+  margin-top: 1.5rem;
   transition: background-color 0.3s ease;
 }
 
@@ -140,28 +159,45 @@ nav .btn-join:hover {
 
 .note {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #ccc;
   margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
 /* Footer */
 footer {
   background-color: #181818;
   color: #ccc;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   text-align: center;
   font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
   margin: 0;
+  font-size: 0.9rem;
+  color: #777;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .steps {
     flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .step {
+    flex-basis: 100%;
+  }
+
+  .btn-discord, .btn-apply {
+    width: 100%;
   }
 }
-
