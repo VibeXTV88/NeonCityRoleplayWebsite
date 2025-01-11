@@ -58,7 +58,7 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover, .nav-links li a.active {
-  color: #1277DD;
+  color: #fff;
 }
 
 nav .btn-join {
