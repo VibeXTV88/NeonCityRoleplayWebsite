@@ -34,7 +34,7 @@ nav .container {
 
 nav .logo {
   font-size: 1.8rem;
-  color: #e6e600;
+  color: #1277DD;
   font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ nav .nav-links li a {
 
 nav .nav-links li a:hover,
 nav .nav-links li a.active {
-  color: #e6e600;
+  color: #181818;
 }
 
 nav .btn-join {
@@ -148,7 +148,7 @@ nav .btn-join:hover {
 
 .contact-info h3 {
   font-size: 1.8rem;
-  color: #1277DD;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
