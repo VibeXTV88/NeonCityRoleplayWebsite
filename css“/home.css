@@ -1,0 +1,16 @@
+/* home.css */
+.home-hero {
+  background: url('images/home-bg.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.home-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
