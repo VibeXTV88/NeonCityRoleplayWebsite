@@ -75,7 +75,7 @@ nav .btn-join:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('images/Neon_Roleplay_big.jpg'); /* Ensure the path is correct */
+  background-image: url('https://cdn.discordapp.com/attachments/1113066512962551808/1327398591022501989/Neon_Roleplay_big.jpg?ex=67839485&is=67824305&hm=29a48eacf6b2b4f34ba156ade78f4a95d797bcea57b67cb0730ea5918bb9d9a8&'); /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
   display: flex;
