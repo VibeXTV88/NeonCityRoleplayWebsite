@@ -1,0 +1,47 @@
+/* global.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+a {
+  color: #e6e600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+nav {
+  background-color: #181818;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links .active {
+  font-weight: bold;
+  color: #e6e600;
+}
+
+/* Footer */
+footer {
+  background: #101010;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #ccc;
+}
