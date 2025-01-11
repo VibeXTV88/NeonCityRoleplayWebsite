@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
+  background-color: #1277DD;
   color: #fff;
 }
 
@@ -58,11 +58,11 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover, .nav-links li a.active {
-  color: #e6e600;
+  color: #1277DD;
 }
 
 nav .btn-join {
-  background-color: #e6e600;
+  background-color: #000000;
   padding: 0.8rem 1.5rem;
   color: #000;
   font-weight: bold;
@@ -72,12 +72,12 @@ nav .btn-join {
 }
 
 nav .btn-join:hover {
-  background-color: #d4d400;
+  background-color: #1277DD;
 }
 
 /* Whitelist Section */
 .whitelist {
-  background-color: #121212;
+  background-color: #121221;
   padding: 5rem 0;
   color: #fff;
   margin-top: 70px; /* Adjust for fixed navbar */
@@ -85,7 +85,7 @@ nav .btn-join:hover {
 
 .whitelist h1 {
   font-size: 3rem;
-  color: #e6e600;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 600;
@@ -116,7 +116,7 @@ nav .btn-join:hover {
 
 .step h2 {
   font-size: 1.8rem;
-  color: #e6e600;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -145,7 +145,7 @@ nav .btn-join:hover {
 }
 
 .btn-apply {
-  background-color: #e6e600;
+  background-color: #ffffff;
   color: #000;
 }
 
