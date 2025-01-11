@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1277DD;
-  color: #ffffff;
+  color: #1277DD;
 }
 
 .container {
@@ -108,7 +108,7 @@ nav .btn-join:hover {
 .contact-form label {
   display: block;
   font-size: 1rem;
-  color: #1277DD;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
