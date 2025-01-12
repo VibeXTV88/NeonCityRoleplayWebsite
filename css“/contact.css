@@ -3,8 +3,8 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1277DD;
-  color: #1277DD;
+  background-color: #0056b3; /* Blau als Hintergrundfarbe */
+  color: #ffffff; /* Weißer Text */
 }
 
 .container {
@@ -21,7 +21,7 @@ a {
 
 /* Navbar */
 nav {
-  background-color: #1277DD;
+  background-color: #0056b3; /* Blau als Hintergrundfarbe */
   padding: 1rem 0;
   border-bottom: 1px solid #333;
 }
@@ -56,7 +56,7 @@ nav .nav-links li a.active {
 }
 
 nav .btn-join {
-  background-color: #181818;
+  background-color: #ff007a; /* Sichtbarer Button-Farbton */
   padding: 0.8rem 1.5rem;
   color: #ffffff;
   font-weight: bold;
@@ -66,12 +66,12 @@ nav .btn-join {
 }
 
 nav .btn-join:hover {
-  background-color: #444;
+  background-color: #e6005c; /* Dunkleres Pink für Hover-Effekt */
 }
 
 /* Contact Page */
 .contact-page {
-  background-color: #1277DD;
+  background-color: #0056b3; /* Blau als Hintergrundfarbe */
   padding: 4rem 0;
 }
 
@@ -131,7 +131,7 @@ nav .btn-join:hover {
 }
 
 .contact-form button {
-  background-color: #1277DD;
+  background-color: #0056b3; /* Blau als Button-Farbe */
   color: #ffffff;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
