@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NeonCity RolePlay – Dive into an epic FiveM roleplaying experience.">
+  <meta name="description" content="NeonCity RolePlay – Tauche ein in ein episches FiveM-Rollenspiel-Erlebnis.">
   <meta name="keywords" content="FiveM, Roleplay, Gaming, NeonCity, RP">
   <title>NeonCity RolePlay</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* General Styles */
+    /* Allgemeine Stile */
     body {
       margin: 0;
       padding: 0;
@@ -29,8 +29,8 @@
       z-index: 1000;
       display: flex;
       justify-content: center;
-      border-bottom: 2px solid #ff007a;
-      box-shadow: 0 2px 10px rgba(255, 0, 122, 0.4);
+      border-bottom: 2px solid #007aff;
+      box-shadow: 0 2px 10px rgba(0, 122, 255, 0.4);
     }
 
     nav .nav-links {
@@ -57,30 +57,30 @@
 
     nav .nav-links a:hover,
     nav .nav-links a.active {
-      color: #ff007a;
-      border: 2px solid #ff007a;
-      background: rgba(255, 0, 122, 0.1);
-      box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a;
+      color: #007aff;
+      border: 2px solid #007aff;
+      background: rgba(0, 122, 255, 0.1);
+      box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
     }
 
     .btn-join {
-      color: #ff007a;
+      color: #007aff;
       text-transform: uppercase;
       font-size: 1rem;
       text-decoration: none;
-      border: 2px solid #ff007a;
+      border: 2px solid #007aff;
       padding: 0.5rem 1rem;
       border-radius: 5px;
       transition: all 0.3s ease;
     }
 
     .btn-join:hover {
-      background: #ff007a;
+      background: #007aff;
       color: #000000;
-      box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a;
+      box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
     }
 
-    /* Hero Section */
+    /* Hero Sektion */
     .hero {
       background: linear-gradient(145deg, #1a1a1a, #292929);
       height: 100vh;
@@ -90,13 +90,13 @@
       flex-direction: column;
       text-align: center;
       padding: 0 2rem;
-      box-shadow: inset 0 0 20px rgba(255, 0, 122, 0.5);
+      box-shadow: inset 0 0 20px rgba(0, 122, 255, 0.5);
     }
 
     .hero h1 {
       font-size: 4rem;
-      color: #ff007a;
-      text-shadow: 0 0 20px #ff007a, 0 0 40px rgba(255, 0, 122, 0.6);
+      color: #007aff;
+      text-shadow: 0 0 20px #007aff, 0 0 40px rgba(0, 122, 255, 0.6);
       margin-bottom: 1rem;
     }
 
@@ -107,7 +107,7 @@
 
     .btn-hero {
       color: #000000;
-      background: #ff007a;
+      background: #007aff;
       text-transform: uppercase;
       font-size: 1.2rem;
       text-decoration: none;
@@ -115,26 +115,26 @@
       border: none;
       border-radius: 5px;
       transition: all 0.3s ease;
-      box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a;
+      box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
     }
 
     .btn-hero:hover {
-      background: rgba(255, 0, 122, 0.8);
-      box-shadow: 0 0 15px #ff007a, 0 0 30px #ff007a;
+      background: rgba(0, 122, 255, 0.8);
+      box-shadow: 0 0 15px #007aff, 0 0 30px #007aff;
     }
 
-    /* About Section */
+    /* About Sektion */
     .about {
       padding: 3rem 2rem;
       background: linear-gradient(145deg, #292929, #3a3a3a);
       color: #ffffff;
       text-align: center;
-      box-shadow: 0 0 20px rgba(255, 0, 122, 0.5);
+      box-shadow: 0 0 20px rgba(0, 122, 255, 0.5);
     }
 
     .about h2 {
       font-size: 3rem;
-      color: #ff007a;
+      color: #007aff;
       margin-bottom: 1rem;
     }
 
@@ -152,29 +152,29 @@
 
     .feature {
       background: #1a1a1a;
-      border: 2px solid #ff007a;
+      border: 2px solid #007aff;
       padding: 2rem;
       border-radius: 10px;
       text-align: center;
       flex: 1;
       min-width: 250px;
       max-width: 300px;
-      box-shadow: 0 0 15px rgba(255, 0, 122, 0.5);
+      box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .feature:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(255, 0, 122, 0.7);
+      box-shadow: 0 0 20px rgba(0, 122, 255, 0.7);
     }
 
     .feature h3 {
       font-size: 1.5rem;
-      color: #ff007a;
+      color: #007aff;
       margin-bottom: 1rem;
     }
 
-    /* Testimonials Section */
+    /* Testimonials Sektion */
     .testimonials {
       padding: 3rem 2rem;
       text-align: center;
@@ -184,18 +184,18 @@
 
     .testimonials h2 {
       font-size: 3rem;
-      color: #ff007a;
+      color: #007aff;
       margin-bottom: 2rem;
     }
 
     .testimonial {
       background: #1a1a1a;
-      border: 2px solid #ff007a;
+      border: 2px solid #007aff;
       padding: 1.5rem;
       border-radius: 10px;
       margin: 1rem auto;
       max-width: 600px;
-      box-shadow: 0 0 15px rgba(255, 0, 122, 0.5);
+      box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
     }
 
     .testimonial p {
@@ -205,7 +205,7 @@
 
     .testimonial cite {
       font-style: italic;
-      color: #ff007a;
+      color: #007aff;
     }
 
     /* Footer */
@@ -215,8 +215,8 @@
       background: rgba(0, 0, 0, 0.8);
       color: #ffffff;
       font-size: 1rem;
-      border-top: 2px solid #ff007a;
-      box-shadow: 0 -2px 10px rgba(255, 0, 122, 0.4);
+      border-top: 2px solid #007aff;
+      box-shadow: 0 -2px 10px rgba(0, 122, 255, 0.4);
     }
   </style>
 </head>
@@ -224,56 +224,56 @@
   <!-- Navbar -->
   <nav>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="rules.html">Rules</a></li>
+      <li><a href="index.html" class="active">Startseite</a></li>
+      <li><a href="rules.html">Regeln</a></li>
       <li><a href="whitelist.html">Whitelist</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Sektion -->
   <header class="hero">
-    <h1>Welcome to NeonCity RolePlay</h1>
-    <p>Experience immersive roleplaying like never before.</p>
-    <a href="fivem://connect/176.97.210.193" class="btn-hero">Join Server</a>
+    <h1>Willkommen bei NeonCity RolePlay</h1>
+    <p>Erlebe immersives Rollenspiel wie nie zuvor.</p>
+    <a href="fivem://connect/176.97.210.193" class="btn-hero">Server beitreten</a>
   </header>
 
-  <!-- About Section -->
+  <!-- About Sektion -->
   <section class="about">
-    <h2>About Us</h2>
-    <p>Join an active and thriving FiveM roleplay community with custom scripts, realistic gameplay, and engaging storytelling.</p>
+    <h2>Über Uns</h2>
+    <p>Schließe dich einer aktiven und lebendigen FiveM-Rollenspiel-Community an, mit benutzerdefinierten Skripten, realistischem Gameplay und fesselndem Storytelling.</p>
     <div class="features">
       <div class="feature">
-        <h3>Realistic RP</h3>
-        <p>Authentic scenarios that bring roleplay to life.</p>
+        <h3>Realistisches RP</h3>
+        <p>Authentische Szenarien, die das Rollenspiel zum Leben erwecken.</p>
       </div>
       <div class="feature">
-        <h3>Custom Scripts</h3>
-        <p>Unique features crafted to enhance your experience.</p>
+        <h3>Benutzerdefinierte Skripte</h3>
+        <p>Einzigartige Features, die dein Erlebnis verbessern.</p>
       </div>
       <div class="feature">
-        <h3>Active Community</h3>
-        <p>Join a welcoming, vibrant community of players.</p>
+        <h3>Aktive Community</h3>
+        <p>Schließe dich einer freundlichen, lebendigen Community von Spielern an.</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- Testimonials Sektion -->
   <section class="testimonials">
-    <h2>What Our Players Say</h2>
+    <h2>Was unsere Spieler sagen</h2>
     <div class="testimonial">
-      <p>"This server is the best I've ever played on. The community and RP are unmatched!"</p>
-      <cite>- Player 1</cite>
+      <p>"Dieser Server ist der beste, auf dem ich je gespielt habe. Die Community und das RP sind unerreicht!"</p>
+      <cite>- Spieler 1</cite>
     </div>
     <div class="testimonial">
-      <p>"Looking for high-quality RP with active players? NeonCity is the place to be!"</p>
-      <cite>- Player 2</cite>
+      <p>"Suchst du nach hochwertigem RP mit aktiven Spielern? NeonCity ist der richtige Ort!"</p>
+      <cite>- Spieler 2</cite>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 NeonCity RolePlay. All rights reserved.</p>
+    <p>© 2025 NeonCity RolePlay. Alle Rechte vorbehalten.</p>
   </footer>
 </body>
 </html>
