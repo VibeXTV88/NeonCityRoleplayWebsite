@@ -1,9 +1,9 @@
-/* General Styles */
+/* Allgemeine Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1277DD;
+  background-color: #1277DD; /* Blau */
   color: #fff;
 }
 
@@ -21,7 +21,7 @@ a {
 
 /* Navbar */
 nav {
-  background-color: #1277DD;
+  background-color: #1277DD; /* Blau */
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -75,12 +75,12 @@ nav .btn-join:hover {
   background-color: #444;
 }
 
-/* Whitelist Section */
+/* Whitelist Abschnitt */
 .whitelist {
   background-color: #121212;
   padding: 5rem 0;
   color: #fff;
-  margin-top: 70px; /* Adjust for fixed navbar */
+  margin-top: 70px; /* Abstand für feste Navbar */
 }
 
 .whitelist h1 {
@@ -132,7 +132,7 @@ nav .btn-join:hover {
 }
 
 .btn-discord, .btn-apply {
-  background-color: #7289da;
+  background-color: #7289da; /* Discord Blau */
   color: #fff;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -145,7 +145,7 @@ nav .btn-join:hover {
 }
 
 .btn-apply {
-  background-color: #1277DD;
+  background-color: #1277DD; /* Blau */
   color: #ffffff;
 }
 
