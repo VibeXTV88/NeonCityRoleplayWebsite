@@ -1,43 +1,45 @@
 /* Navbar for Rules Page */
 nav {
   background-color: #181818; /* Matches the site's dark theme */
-  padding: 1rem 3rem; /* Added padding for a spacious look */
+  padding: 1rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center-align navigation links */
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav.scrolled {
-  background-color: #121212; /* Slightly darker when scrolled */
+  background-color: #121212;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Logo */
+/* Logo Positioned to the Left */
 nav .logo {
+  position: absolute;
+  left: 2rem;
   font-size: 2rem;
   font-weight: bold;
-  color: #e6e600; /* NeonCity's accent color */
+  color: #e6e600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   transition: color 0.3s ease;
 }
 
 nav .logo:hover {
-  color: #ffffff; /* Slight hover effect for logo */
+  color: #ffffff;
 }
 
-/* Navigation Links */
+/* Navigation Links Centered */
 nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem; /* Adds space between links */
+  gap: 2rem;
 }
 
 nav .nav-links li {
@@ -56,20 +58,22 @@ nav .nav-links a {
 
 nav .nav-links a:hover,
 nav .nav-links a.active {
-  background-color: #e6e600; /* Highlight color */
-  color: #000000; /* Contrast for text */
-  transform: translateY(-2px); /* Subtle lift effect */
-  box-shadow: 0 4px 6px rgba(230, 230, 0, 0.3); /* Glow effect */
-}
-
-/* Join Button */
-nav .btn-join {
   background-color: #e6e600;
   color: #000000;
-  padding: 0.8rem 2rem; /* Wider button for breathing room */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(230, 230, 0, 0.3);
+}
+
+/* Join Button Positioned to the Right */
+nav .btn-join {
+  position: absolute;
+  right: 2rem;
+  background-color: #e6e600;
+  color: #000000;
+  padding: 0.8rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 25px; /* Rounded button for a modern look */
+  border-radius: 25px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-transform: uppercase;
 }
@@ -77,58 +81,5 @@ nav .btn-join {
 nav .btn-join:hover {
   background-color: #d4d400;
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(230, 230, 0, 0.4); /* Enhanced hover effect */
-}
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-  nav {
-    padding: 1rem 2rem; /* Reduced padding for smaller screens */
-  }
-
-  nav .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 1.5rem; /* Added gap for clean spacing */
-    background-color: #181818;
-    padding: 1.5rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    border-top: 1px solid #333;
-  }
-
-  nav .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: #e6e600; /* Accent color */
-    transition: transform 0.3s ease;
-  }
-
-  nav.active .nav-links {
-    display: flex;
-  }
-
-  nav.active .menu-toggle {
-    transform: rotate(90deg);
-  }
-}
-
-/* Subtle Navbar Animation on Scroll */
-nav {
-  animation: fadeIn 0.5s ease-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  box-shadow: 0 6px 12px rgba(230, 230, 0, 0.4);
 }
