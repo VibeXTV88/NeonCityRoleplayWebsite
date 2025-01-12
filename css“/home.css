@@ -1,4 +1,4 @@
-/* General Styles */
+/* Allgemeine Styles */
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +75,7 @@ nav .btn-join:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1113066512962551808/1327398591022501989/Neon_Roleplay_big.jpg?ex=67839485&is=67824305&hm=29a48eacf6b2b4f34ba156ade78f4a95d797bcea57b67cb0730ea5918bb9d9a8&'); /* Ensure the path is correct */
+  background-image: url('https://cdn.discordapp.com/attachments/1113066512962551808/1327398591022501989/Neon_Roleplay_big.jpg?ex=67839485&is=67824305&hm=29a48eacf6b2b4f34ba156ade78f4a95d797bcea57b67cb0730ea5918bb9d9a8&'); /* Sicherstellen, dass der Pfad korrekt ist */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -125,7 +125,7 @@ nav .btn-join:hover {
   background-color: #444;
 }
 
-/* About Section */
+/* Über uns Section */
 .about {
   padding: 80px 20px;
   background-color: #1277DD;
