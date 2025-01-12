@@ -1,6 +1,6 @@
 /* Navbar */
 nav {
-  background-color: #1a1a1a; /* Dark background to match neon theme */
+  background-color: #1a1a1a; /* Dunkler Hintergrund für das Neon-Thema */
   padding: 1rem 3rem;
   position: fixed;
   top: 0;
@@ -8,14 +8,14 @@ nav {
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: center; /* Center-align navigation links */
+  justify-content: center; /* Navigation-Links zentrieren */
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav.scrolled {
-  background-color: #0f0f0f; /* Slightly darker when scrolled */
+  background-color: #0f0f0f; /* Etwas dunkler, wenn gescrollt */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -23,9 +23,9 @@ nav.scrolled {
 nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem; /* Spaced-out navigation links */
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
+  gap: 2rem; /* Abstand zwischen den Navigation-Links */
+  margin: 0; /* Margin zurücksetzen */
+  padding: 0; /* Padding zurücksetzen */
 }
 
 nav .nav-links li {
@@ -34,7 +34,7 @@ nav .nav-links li {
 
 nav .nav-links a {
   font-size: 1.2rem;
-  color: #cccccc; /* Light grey for readability */
+  color: #cccccc; /* Hellgrau für bessere Lesbarkeit */
   text-transform: uppercase;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -45,31 +45,31 @@ nav .nav-links a {
 
 nav .nav-links a:hover,
 nav .nav-links a.active {
-  color: #000000; /* Dark text */
-  background-color: #ff0055; /* Neon pink */
+  color: #ffffff; /* Weißer Text */
+  background-color: #007bff; /* Neon-blau */
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(255, 0, 85, 0.4); /* Pink glow effect */
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4); /* Blauer Leuchteffekt */
 }
 
-/* Rules Section */
+/* Regeln Section */
 .rules-container {
-  margin: 7rem auto 2rem; /* Add space below navbar */
-  max-width: 800px; /* Limit content width for readability */
+  margin: 7rem auto 2rem; /* Abstand unter der Navbar */
+  max-width: 800px; /* Maximale Breite für bessere Lesbarkeit */
   padding: 2rem;
-  background: #1a1a1a; /* Dark background for rules section */
+  background: #1a1a1a; /* Dunkler Hintergrund für den Regeln-Abschnitt */
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
-  color: #f5f5f5; /* Light text for contrast */
-  font-family: 'Roboto', sans-serif; /* Modern font */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Subtile Schatten für Tiefe */
+  color: #f5f5f5; /* Heller Text für Kontrast */
+  font-family: 'Roboto', sans-serif; /* Moderner Font */
 }
 
 .rules-container h1 {
   text-align: center;
-  color: #ff0055; /* Neon pink header */
+  color: #007bff; /* Neon-blauer Header */
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 10px rgba(255, 0, 85, 0.8); /* Neon glow effect */
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Neon-Leuchteffekt */
 }
 
 .rules-container ul {
@@ -86,16 +86,16 @@ nav .nav-links a.active {
 }
 
 .rules-container ul li:before {
-  content: "•"; /* Bullet style */
+  content: "•"; /* Bullet-Stil */
   position: absolute;
   left: 0;
   font-size: 1.5rem;
-  color: #ff0055; /* Neon pink bullets */
-  text-shadow: 0 0 6px rgba(255, 0, 85, 0.6); /* Glow for bullets */
+  color: #007bff; /* Neon-blau für die Bullet-Punkte */
+  text-shadow: 0 0 6px rgba(0, 123, 255, 0.6); /* Leuchteffekt für die Bullet-Punkte */
 }
 
 .rules-container ul li:hover {
-  color: #ff0055; /* Highlight rule on hover */
+  color: #007bff; /* Regel hervorheben bei Hover */
   transform: scale(1.05);
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -108,7 +108,7 @@ nav .nav-links a.active {
   }
 
   .rules-container {
-    margin: 7rem 1rem 2rem; /* Adjust margins for smaller screens */
+    margin: 7rem 1rem 2rem; /* Margins für kleinere Bildschirme anpassen */
     padding: 1.5rem;
   }
 
