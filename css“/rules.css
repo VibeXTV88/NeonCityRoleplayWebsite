@@ -15,7 +15,7 @@ nav {
 }
 
 nav.scrolled {
-  background-color: #121212;
+  background-color: #121212; /* Darker shade when scrolled */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -41,6 +41,7 @@ nav .nav-links {
   flex-grow: 1;
   justify-content: center; /* Center-align navigation links */
   margin: 0; /* Reset margin for consistency */
+  padding: 0; /* Reset padding for list */
 }
 
 nav .nav-links li {
@@ -55,12 +56,12 @@ nav .nav-links a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
 }
 
 nav .nav-links a:hover,
 nav .nav-links a.active {
-  background-color: #e6e600;
+  background-color: #e6e600; /* Highlight effect */
   color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(230, 230, 0, 0.3);
@@ -75,15 +76,16 @@ nav .btn-join {
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-transform: uppercase;
+  text-decoration: none; /* Remove underline */
 }
 
 nav .btn-join:hover {
-  background-color: #d4d400;
+  background-color: #d4d400; /* Slightly darker yellow on hover */
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(230, 230, 0, 0.4);
 }
 
-/* Ensure Navigation Links Align Consistently */
+/* Navigation Container for Alignment */
 nav .nav-container {
   display: flex;
   align-items: center;
