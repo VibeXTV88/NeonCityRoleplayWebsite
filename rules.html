@@ -3,95 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeonCity RolePlay – Rules</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Server Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000000; /* Neon City dark theme */
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 3rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #ff007a;
+      box-shadow: 0 2px 10px rgba(255, 0, 122, 0.4);
+    }
+
+    nav .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav .nav-links li {
+      display: inline-block;
+    }
+
+    nav .nav-links a {
+      font-size: 1.2rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    nav .nav-links a:hover,
+    nav .nav-links a.active {
+      color: #ff007a;
+      border: 2px solid #ff007a;
+      background: rgba(255, 0, 122, 0.1);
+      box-shadow: 0 0 10px #ff007a, 0 0 20px #ff007a;
+    }
+
+    /* Rules Section */
+    .rules-container {
+      margin: 8rem auto 3rem; /* Space below navbar */
+      max-width: 900px;
+      padding: 2rem;
+      background: linear-gradient(145deg, #1a1a1a, #292929);
+      border: 2px solid #ff007a;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 0, 122, 0.7);
+      text-align: center;
+    }
+
+    .rules-container h1 {
+      font-size: 3rem;
+      color: #ff007a;
+      text-shadow: 0 0 15px #ff007a, 0 0 30px rgba(255, 0, 122, 0.6);
+      margin-bottom: 1.5rem;
+    }
+
+    .rules-container ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rules-container ul li {
+      font-size: 1.4rem;
+      margin: 1.2rem 0;
+      position: relative;
+      padding-left: 2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .rules-container ul li:hover {
+      color: #ff007a;
+      transform: scale(1.05);
+    }
+
+    .rules-container ul li:before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+      color: #ff007a;
+      text-shadow: 0 0 10px rgba(255, 0, 122, 0.8);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      font-size: 1rem;
+      border-top: 2px solid #ff007a;
+      box-shadow: 0 -2px 10px rgba(255, 0, 122, 0.4);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .rules-container {
+        margin: 8rem 1rem 3rem;
+        padding: 1.5rem;
+      }
+
+      .rules-container h1 {
+        font-size: 2.5rem;
+      }
+
+      .rules-container ul li {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
-<nav>
-  <div class="nav-container">
-    <a href="#" class="logo">NeonCity RP</a>
+  <nav>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Rules</a></li>
-      <li><a href="#">Whitelist</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rules.html" class="active">Rules</a></li>
+      <li><a href="whitelist.html">Whitelist</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="fivem://connect/176.97.210.193" class="btn-join">Join Server</a>
-  </div>
-</nav>
+  </nav>
 
-
-  <section class="rules-page">
-  <h1>Server Rules</h1>
-  <p>
-  </p>
-  
-  <div class="rules-list">
-    <h2>General Rules</h2>
+  <!-- Rules Section -->
+  <section class="rules-container">
+    <h1>Server Rules</h1>
     <ul>
-      <li>Be respectful to all players and staff members.</li>
-      <li>Cheating, hacking, or exploiting bugs is strictly prohibited.</li>
-      <li>Do not engage in harassment, hate speech, or offensive language.</li>
-      <li>Follow roleplay guidelines and maintain in-character behavior.</li>
+      <li>Respect all players and staff members at all times.</li>
+      <li>No harassment, hate speech, or offensive language.</li>
+      <li>Cheating or exploiting bugs will result in a ban.</li>
+      <li>Roleplay realistically and follow server lore.</li>
+      <li>Do not share personal information.</li>
+      <li>Adhere to server-specific guidelines at all times.</li>
     </ul>
-  </div>
-</section>
-
-      <!-- Rule List -->
-      <div class="rule-list">
-        <div class="rule-item">
-          <h3>1. Respektiere andere Spieler</h3>
-          <p>Behandle alle Spieler respektvoll. Beleidigungen, Rassismus oder toxisches Verhalten werden nicht toleriert.</p>
-        </div>
-        <div class="rule-item">
-          <h3>2. Kein Cheaten oder Exploiten</h3>
-          <p>Verwende keine Cheats, Hacks oder Exploits. Fairness ist das A und O im Spiel.</p>
-        </div>
-        <div class="rule-item">
-          <h3>3. Verhalte dich an die RP-Regeln</h3>
-          <p>Roleplay ist das Herzstück des Spiels. Bleibe immer im Charakter und handle gemäß deinem Charakter.</p>
-        </div>
-        <div class="rule-item">
-          <h3>4. Kein Metagaming oder Powergaming</h3>
-          <p>Nutze keine Informationen aus dem OOC (Out-of-Character) Bereich, um dein RP zu beeinflussen. Powergaming ist ebenfalls untersagt.</p>
-        </div>
-        <div class="rule-item">
-          <h3>5. Fahrzeuge und Eigentum respektieren</h3>
-          <p>Behandle Fahrzeuge und Eigentum anderer Spieler respektvoll. Zerstöre oder beschädige keine Fahrzeuge ohne Grund.</p>
-        </div>
-        <div class="rule-item">
-          <h3>6. Kein Trolling oder Missbrauch von Bugs</h3>
-          <p>Trolling, Missbrauch von Bugs und Exploits ist verboten. Informiere das Team über Fehler und Bugs sofort.</p>
-        </div>
-        <div class="rule-item">
-          <h3>7. Kein RDM (Random Deathmatch)</h3>
-          <p>Schieße oder töte nicht ohne einen klaren Grund im RP. Ein Kill muss im Kontext des Spiels gerechtfertigt sein.</p>
-        </div>
-        <div class="rule-item">
-          <h3>8. Keine Werbung</h3>
-          <p>Vermeide Werbung für andere Server, Websites oder Produkte innerhalb des Spiels oder auf dem Server.</p>
-        </div>
-        <div class="rule-item">
-          <h3>9. Verhalten bei Konflikten</h3>
-          <p>Verhalte dich ruhig und respektvoll bei Konflikten. Ein Streit sollte immer über den richtigen Kanal und nicht in der Öffentlichkeit ausgefochten werden.</p>
-        </div>
-      </div>
-
-      <p>Bitte beachtet, dass Verstöße gegen diese Regeln zu Strafen führen können. Viel Spaß und gutes Roleplay!</p>
-    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 NeonCity RolePlay | All Rights Reserved</p>
-    </div>
+    <p>© 2025 Neon City Roleplay. All rights reserved.</p>
   </footer>
 </body>
 </html>
-<head>
-  <link rel="stylesheet" href="css“/global.css">
-  <link rel="stylesheet" href="css“/rules.css">
-</head>
-
