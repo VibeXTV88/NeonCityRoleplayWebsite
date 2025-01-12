@@ -62,7 +62,7 @@ nav .nav-links li a:hover, .nav-links li a.active {
 }
 
 nav .btn-join {
-  background-color: #1277DD;
+  background-color: #000000;
   padding: 0.8rem 1.5rem;
   color: #ffffff;
   font-weight: bold;
@@ -72,7 +72,7 @@ nav .btn-join {
 }
 
 nav .btn-join:hover {
-  background-color: #000000;
+  background-color: #cccccc;
 }
 
 /* Whitelist Section */
