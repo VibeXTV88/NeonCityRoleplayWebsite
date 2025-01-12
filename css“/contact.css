@@ -58,7 +58,7 @@ nav .nav-links li a.active {
 nav .btn-join {
   background-color: #181818;
   padding: 0.8rem 1.5rem;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px;
@@ -115,7 +115,7 @@ nav .btn-join:hover {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #333;
   color: #ffffff;
   border: 1px solid #444;
   border-radius: 5px;
@@ -132,7 +132,7 @@ nav .btn-join:hover {
 
 .contact-form button {
   background-color: #1277DD;
-  color: #000000;
+  color: #ffffff;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
