@@ -1,6 +1,6 @@
-/* Navbar for Rules Page */
+/* Navbar */
 nav {
-  background: linear-gradient(90deg, #181818, #252525); /* Subtle gradient for depth */
+  background-color: #1a1a1a; /* Dark background to match neon theme */
   padding: 1rem 3rem;
   position: fixed;
   top: 0;
@@ -8,42 +8,24 @@ nav {
   width: 100%;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Space between logo and nav items */
+  justify-content: center; /* Center-align navigation links */
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav.scrolled {
-  background: linear-gradient(90deg, #121212, #1a1a1a); /* Darker gradient on scroll */
+  background-color: #0f0f0f; /* Slightly darker when scrolled */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  transform: translateY(-2px); /* Slight elevation effect */
 }
 
-/* Logo Positioned to the Left */
-nav .logo {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #ffdd00; /* Eye-catching golden yellow */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-nav .logo:hover {
-  color: #ffffff;
-  text-shadow: 0 0 8px #ffdd00; /* Glow effect on hover */
-}
-
-/* Navigation Links Centered */
+/* Navigation Links */
 nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 2.5rem; /* Increased gap for a more spacious layout */
-  flex-grow: 1;
-  justify-content: center; /* Center-align navigation links */
-  margin: 0; /* Reset margin for consistency */
-  padding: 0; /* Reset padding for list */
+  gap: 2rem; /* Spaced-out navigation links */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
 }
 
 nav .nav-links li {
@@ -51,96 +33,90 @@ nav .nav-links li {
 }
 
 nav .nav-links a {
-  font-size: 1rem;
-  color: #e0e0e0; /* Light grey for readability */
+  font-size: 1.2rem;
+  color: #cccccc; /* Light grey for readability */
   text-transform: uppercase;
   font-weight: 600;
-  padding: 0.7rem 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none; /* Remove underline */
-  position: relative;
-  overflow: hidden;
-}
-
-nav .nav-links a:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 221, 0, 0.2); /* Highlight effect */
-  z-index: -1;
-  transition: transform 0.4s ease;
-}
-
-nav .nav-links a:hover:before {
-  transform: translateX(100%);
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav .nav-links a:hover,
 nav .nav-links a.active {
-  color: #ffdd00;
-  box-shadow: 0 4px 6px rgba(255, 221, 0, 0.3);
+  color: #000000; /* Dark text */
+  background-color: #ff0055; /* Neon pink */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(255, 0, 85, 0.4); /* Pink glow effect */
 }
 
-/* Join Button Positioned to the Right */
-nav .btn-join {
-  background: linear-gradient(135deg, #ffdd00, #ffa700); /* Unique gradient for join button */
-  color: #181818;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 700;
+/* Rules Section */
+.rules-container {
+  margin: 7rem auto 2rem; /* Add space below navbar */
+  max-width: 800px; /* Limit content width for readability */
+  padding: 2rem;
+  background: #1a1a1a; /* Dark background for rules section */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+  color: #f5f5f5; /* Light text for contrast */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+.rules-container h1 {
+  text-align: center;
+  color: #ff0055; /* Neon pink header */
+  font-size: 2.5rem;
   text-transform: uppercase;
-  text-decoration: none; /* Remove underline */
-  box-shadow: 0 4px 6px rgba(255, 165, 0, 0.4);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(255, 0, 85, 0.8); /* Neon glow effect */
 }
 
-nav .btn-join:hover {
-  background: linear-gradient(135deg, #ffa700, #ff8500); /* Darker gradient on hover */
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(255, 165, 0, 0.6);
+.rules-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navigation Container for Alignment */
-nav .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.rules-container ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
 }
 
-/* Mobile Responsiveness */
+.rules-container ul li:before {
+  content: "•"; /* Bullet style */
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  color: #ff0055; /* Neon pink bullets */
+  text-shadow: 0 0 6px rgba(255, 0, 85, 0.6); /* Glow for bullets */
+}
+
+.rules-container ul li:hover {
+  color: #ff0055; /* Highlight rule on hover */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  nav {
-    padding: 1rem;
-  }
-
-  nav .logo {
-    font-size: 1.8rem;
-  }
-
   nav .nav-links {
-    display: none; /* Hidden by default */
-  }
-
-  nav.active .nav-links {
-    display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background: #181818;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   }
 
-  nav .btn-join {
-    margin-top: 1rem;
-    align-self: center;
+  .rules-container {
+    margin: 7rem 1rem 2rem; /* Adjust margins for smaller screens */
+    padding: 1.5rem;
+  }
+
+  .rules-container h1 {
+    font-size: 2rem;
+  }
+
+  .rules-container ul li {
+    font-size: 1rem;
   }
 }
