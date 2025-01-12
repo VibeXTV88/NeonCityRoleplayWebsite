@@ -40,6 +40,7 @@ nav .nav-links {
   gap: 2rem;
   flex-grow: 1;
   justify-content: center; /* Center-align navigation links */
+  margin: 0; /* Reset margin for consistency */
 }
 
 nav .nav-links li {
@@ -54,6 +55,7 @@ nav .nav-links a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
 
 nav .nav-links a:hover,
@@ -64,7 +66,7 @@ nav .nav-links a.active {
   box-shadow: 0 4px 6px rgba(230, 230, 0, 0.3);
 }
 
-/* Join Button */
+/* Join Button Positioned to the Right */
 nav .btn-join {
   background-color: #e6e600;
   color: #000000;
@@ -79,4 +81,12 @@ nav .btn-join:hover {
   background-color: #d4d400;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(230, 230, 0, 0.4);
+}
+
+/* Ensure Navigation Links Align Consistently */
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
