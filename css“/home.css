@@ -1,204 +1,210 @@
-/* Allgemeine Styles */
-* {
+/* Allgemeine Stile */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #1277DD;
-  color: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  background: #000000;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
 /* Navbar */
 nav {
-  background-color: #1277DD;
-  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
-}
-
-nav .container {
+  z-index: 1000;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fff;
+  justify-content: center;
+  border-bottom: 2px solid #007aff;
+  box-shadow: 0 2px 10px rgba(0, 122, 255, 0.4);
 }
 
 nav .nav-links {
   list-style: none;
   display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav .nav-links li {
-  margin-left: 20px;
+  display: inline-block;
 }
 
 nav .nav-links a {
-  color: #fff;
-  font-weight: 500;
-  padding: 10px 15px;
-  transition: color 0.3s ease;
-}
-
-nav .nav-links a:hover {
+  font-size: 1.2rem;
   color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
-nav .btn-join {
-  background-color: #000000;
-  color: #fff;
-  padding: 12px 24px;
+nav .nav-links a:hover,
+nav .nav-links a.active {
+  color: #007aff;
+  border: 2px solid #007aff;
+  background: rgba(0, 122, 255, 0.1);
+  box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
+}
+
+.btn-join {
+  color: #007aff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #007aff;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-nav .btn-join:hover {
-  background-color: #444;
+.btn-join:hover {
+  background: #007aff;
+  color: #000000;
+  box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
 }
 
-/* Hero Section */
+/* Hero Sektion */
 .hero {
+  background: linear-gradient(145deg, #1a1a1a, #292929);
   height: 100vh;
-  background-image: url('https://cdn.discordapp.com/attachments/1113066512962551808/1327398591022501989/Neon_Roleplay_big.jpg?ex=67839485&is=67824305&hm=29a48eacf6b2b4f34ba156ade78f4a95d797bcea57b67cb0730ea5918bb9d9a8&'); /* Sicherstellen, dass der Pfad korrekt ist */
-  background-size: cover;
-  background-position: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.hero-content {
-  z-index: 1;
+  padding: 0 2rem;
+  box-shadow: inset 0 0 20px rgba(0, 122, 255, 0.5);
 }
 
 .hero h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+  color: #007aff;
+  text-shadow: 0 0 20px #007aff, 0 0 40px rgba(0, 122, 255, 0.6);
+  margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
-.hero .btn-hero {
-  background-color: #000000;
-  padding: 15px 30px;
+.btn-hero {
+  color: #000000;
+  background: #007aff;
+  text-transform: uppercase;
   font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border: none;
   border-radius: 5px;
-  color: #fff;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #007aff, 0 0 20px #007aff;
 }
 
-.hero .btn-hero:hover {
-  background-color: #444;
+.btn-hero:hover {
+  background: rgba(0, 122, 255, 0.8);
+  box-shadow: 0 0 15px #007aff, 0 0 30px #007aff;
 }
 
-/* Über uns Section */
+/* About Sektion */
 .about {
-  padding: 80px 20px;
-  background-color: #1277DD;
+  padding: 3rem 2rem;
+  background: linear-gradient(145deg, #292929, #3a3a3a);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 122, 255, 0.5);
 }
 
 .about h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
+  font-size: 3rem;
+  color: #007aff;
+  margin-bottom: 1rem;
 }
 
 .about p {
   font-size: 1.2rem;
-  text-align: center;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #e6e6e6;
+  margin-bottom: 2rem;
 }
 
 .features {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 40px;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .feature {
+  background: #1a1a1a;
+  border: 2px solid #007aff;
+  padding: 2rem;
+  border-radius: 10px;
   text-align: center;
-  max-width: 250px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 122, 255, 0.7);
 }
 
 .feature h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #007aff;
+  margin-bottom: 1rem;
 }
 
-.feature p {
-  font-size: 1rem;
-  color: #ddd;
-}
-
-/* Testimonials Section */
+/* Testimonials Sektion */
 .testimonials {
-  padding: 80px 20px;
-  background-color: #222;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(145deg, #1a1a1a, #292929);
+  color: #ffffff;
 }
 
 .testimonials h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #fff;
+  font-size: 3rem;
+  color: #007aff;
+  margin-bottom: 2rem;
 }
 
 .testimonial {
-  background-color: #333;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background: #1a1a1a;
+  border: 2px solid #007aff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem auto;
   max-width: 600px;
-  margin: 0 auto 20px auto;
-  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
 }
 
 .testimonial p {
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ccc;
+  margin-bottom: 1rem;
 }
 
 .testimonial cite {
   font-style: italic;
-  color: #1277DD;
+  color: #007aff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 1rem;
+  border-top: 2px solid #007aff;
+  box-shadow: 0 -2px 10px rgba(0, 122, 255, 0.4);
 }
